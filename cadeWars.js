@@ -40,3 +40,9 @@ function isToday(date) {
 function greet(){
   return "hello world!";
 };
+
+//Функция умноужения
+function doubleInteger(i) {
+  // i will be an integer. Double it and return it.
+  return i*2;
+}
