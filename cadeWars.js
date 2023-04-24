@@ -46,3 +46,11 @@ function doubleInteger(i) {
   // i will be an integer. Double it and return it.
   return i*2;
 }
+//Подсчет овец 
+function countSheep(num) {
+  let result = '';
+  for (let i = 1; i <= num; i++) {
+    result = result.concat(i + ' sheep...');
+  }
+  return result;
+}
