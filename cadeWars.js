@@ -54,3 +54,9 @@ function countSheep(num) {
   }
   return result;
 }
+//Возвращает цифру с 2-мя знаками после запятой
+function twoDecimalPlaces(n) {
+  const a = n;
+const b= parseFloat( a.toFixed(2));
+return b;
+}
