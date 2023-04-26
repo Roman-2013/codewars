@@ -59,4 +59,10 @@ function twoDecimalPlaces(n) {
   const a = n;
 const b= parseFloat( a.toFixed(2));
 return b;
+
+
 }
+//Базовое присвоение переменной
+var a = "code";
+var b = "wa.rs";
+var name = a + b;
