@@ -66,3 +66,9 @@ return b;
 var a = "code";
 var b = "wa.rs";
 var name = a + b;
+
+//
+function arrayPlusArray(arr1, arr2) {
+  const sum = arr1.concat(arr2).reduce((total, num) => total + num, 0);
+  return sum;
+}
