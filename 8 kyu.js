@@ -114,3 +114,41 @@ function removeExclamationMarks(s) {
   }
   return i.join('');
 }
+
+// Проверить тот же случай
+function sameCase(a, b){
+  if (!/[a-zA-Z]/.test(a) || !/[a-zA-Z]/.test(b)) {
+    return -1;
+  }
+  if(a.toUpperCase()===a && b.toUpperCase()===b){
+    return 1;
+  }else if (a.toLowerCase()===a && b.toLowerCase()===b){
+    return 1
+  }else if (a.toUpperCase()===a && b.toLowerCase()===b){
+    return 0;
+  }else if(a.toLowerCase()===a && b.toUpperCase()===b ){
+    return 0;
+    }
+  }
+
+//Повтор строки
+function repeatStr (n, s) {
+  let a=[];
+  for(let i=1;i<=n;i++){
+    a.push(s);
+  }
+  return a.join('')
+}
+
+//Keep up the hoop
+function hoopCount (n) {
+ return  n>=10?  "Great, now move on to tricks":  "Keep at it until you get it";
+   //your code goes here    
+}
+
+
+//Регулярное выражение проверяет PIN-код
+function validatePIN (pin) {
+    return /^(\d{4}|\d{6})$/.test(pin);
+}
+
