@@ -152,3 +152,18 @@ function validatePIN (pin) {
     return /^(\d{4}|\d{6})$/.test(pin);
 }
 
+//квартал года
+const quarterOf = (month) => 
+  month>=1 && month<=3? 1:
+   month>=4 && month<=6 ? 2:
+   month>=7 && month<=9 ? 3:
+    4;
+    
+//Противоположный номер
+
+    function opposite(number) {
+  return number*-1
+}
+  
+
+
