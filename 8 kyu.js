@@ -166,4 +166,29 @@ const quarterOf = (month) =>
 }
   
 
+//Общее количество баллов
+function points(games) {
+  let rezult=0;
+  for(let a=0;a<games.length;a++){
+    var item=games[a].split(":");
+    if (item[0]>item[1]){
+      rezult+=3;
+    }else if(item[0]===item[1]){
+      rezult +=1
+    }  
+  }
+  return rezult;
+  }
 
+//Поддельный двоичный файл
+function fakeBin(x){
+  var str='';
+  for(let a=0;a<x.length;a++){
+    if(x[a]<5){
+      str+='0';
+    } else {
+    str+='1';
+}
+    }
+  return str;
+  }
