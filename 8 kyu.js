@@ -192,3 +192,98 @@ function fakeBin(x){
     }
   return str;
   }
+
+  //Четным или нечетным
+  function evenOrOdd(number) {
+  if(number%2==0){
+    return "Even";
+  }else{
+    return "Odd";
+  }
+  
+}
+
+//Обратные слова
+function reverseWords(str) {
+  // Разбиваем строку на слова
+  const words = str.split(' ');
+  // Переворачиваем каждое слово и сохраняем обратно в массив
+  const reversedWords = words.map(word => word.split('').reverse().join(''));
+  // Объединяем слова обратно в строку с пробелами
+  return reversedWords.join(' ');
+} 
+
+// Итоговая оценка студента
+function finalGrade (exam, projects) {
+  if(exam>90 || projects>10){
+    return 100;
+  }else if(exam>75 && projects>=5){
+    return 90;
+  }else if(exam>50 && projects>=2){
+    return 75;
+  }else {
+    return 0
+  }
+}
+
+//Преобразовать число в перевернутый массив цифр
+function digitize(n) {
+const min = 0;
+const max = 100;
+const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+  
+  const number = n;
+const digitsArray = number.toString().split('').reverse().map(Number);
+  
+  return digitsArray;
+  }
+
+  //Инвертировать значения
+  function invert(array) {
+return array.map(item =>item*-1)
+}
+
+//Иголка в стоге сена
+function findNeedle(haystack) {
+  return "found the needle at position "+haystack.indexOf('needle');
+  }
+  
+//Сумма положительных
+  function positiveSum(arr) {
+  let sum=0;
+  arr.map(item =>{
+    if(Math.sign(item)===1){
+      sum+=item
+    }
+  })
+  return sum;
+}
+
+//Basic Mathematical Operations
+function basicOp(operation, value1, value2){
+  if(operation=='+'){
+    return value1 + value2
+  }else if (operation=='-'){
+    return value1 - value2;
+    }else if (operation=='*'){
+    return value1 * value2
+  }else {
+    return value1 / value2
+  }
+  }
+
+  //Reversed Strings
+  function solution(str){
+  return str.split('').reverse().join('');
+}
+
+//Возвращаемые строки
+function greet(name){
+ return "Hello, "+name+ " how are you doing today?"
+}
+
+//Серия для начинающих #1 Школьная работа с документами
+function paperwork(n, m) {
+  return n<0 ||m<0?0:n*m
+  
+}
