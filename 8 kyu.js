@@ -285,5 +285,38 @@ function greet(name){
 //Серия для начинающих #1 Школьная работа с документами
 function paperwork(n, m) {
   return n<0 ||m<0?0:n*m
-  
+}
+
+//бормотание
+function accum(s) {
+  return s.split('').map(function(leter,index){
+    return leter.toUpperCase()+leter.toLowerCase().repeat(index);
+  })
+  .join('-');
+  }
+
+//Противоположности притягиваются
+function lovefunc(flower1, flower2){
+     if(flower1 % 2!==0  && flower2 % 2===0){
+    return true
+  }else if(flower1 % 2==0 && flower2 % 2!==0){
+    return true
+  }else{
+    return false
+  }
+     }
+console.log(lovefunc(2,2))
+
+//Вам нужен только один - Новичок
+function check(a, x) {
+ return a.includes(x)
+}
+
+//Обратная последовательность
+ function reverseSeq(n){
+  let rezult=[];
+  for(let a=0;a<n;a++){
+    rezult.push(n-a)
+  }
+  return rezult;
 }
