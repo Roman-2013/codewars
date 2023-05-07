@@ -320,3 +320,44 @@ function check(a, x) {
   }
   return rezult;
 }
+
+//Преобразование логических значений в строки «Да» или «Нет».
+let boolToWord=( bool) => bool===true?"Yes":"No";
+
+//
+Найдите наименьшее целое число в массиве
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return args.sort((a,b)=>a-b)[0]
+  }
+}
+
+//Удалить строковые пробелы
+function noSpace(x){
+  let a=/\s+/g;
+  return x.replace(a,'');
+}
+
+//Grasshopper - Summation
+var summation = function (num) {
+  let a=0;
+  for(let i=0;i<=num;i++){
+    a+=i
+  }
+  return a;
+}
+
+//Find Maximum and Minimum Values of a List
+var min = function(list){
+    list.sort(function(a,b){
+      return a-b
+    })
+    return list[0];
+}
+
+var max = function(list){
+list.sort(function(a,b){
+      return a-b
+    })
+    return list[list.length-1];
+}
