@@ -361,3 +361,80 @@ list.sort(function(a,b){
     })
     return list[list.length-1];
 }
+
+//Сохраняйте увлажнение!
+function litres(time) {
+  return Math.floor(0.5*time);
+}
+//Новичок - Заблудился без карты
+function maps(x){
+  let rezult=[];
+   x.map(function(name){
+    rezult.push(name*=2)
+  })
+return rezult;
+}
+
+//Кузнечик — персонализированное сообщение
+function greet (name, owner) {
+return  name===owner?"Hello boss":"Hello guest";
+}
+
+//Он выживет?
+function hero(bullets, dragons){
+return bullets/2>=dragons
+}
+
+//MakeUpperCase
+function makeUpperCase(str) {
+  return str.toUpperCase();
+  // Code here
+}
+
+//Третий угол треугольника
+function otherAngle(a, b) {
+  return 180-(a+b);
+}
+
+//Кузнечик - Зачетная книжка
+function getGrade (s1, s2, s3) {
+  let rezult= (s1+s2+s3)/3;
+  console.log(rezult)
+  if(90<=rezult && rezult<=100){
+    return "A";
+  }else if (80<=rezult&&rezult<90){
+    return "B";
+}else if (70<=rezult&&rezult<80){
+    return "C";
+  }else if (60<=rezult&&rezult<70){
+    return "D";
+  }else {
+    return "F";
+  }
+  }
+
+  //Часы для начинающих серии №2
+  function past(h, m, s){
+ return s*1000+ m*60000+h*3600000
+  //#Happy Coding! ^_^
+}
+
+//Площадь или периметр
+const areaOrPerimeter = function(l , w) {
+  if(l==w){
+    return l*w
+  }else{
+    return l*2+w*2
+  }
+};
+
+
+
+//Удаление элементов
+function removeEveryOther(arr){
+let newArr = [arr[0]];
+for (let i = 2; i < arr.length; i += 2) {
+  newArr.push(arr[i]);
+}
+return newArr
+  }
