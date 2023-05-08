@@ -438,3 +438,59 @@ for (let i = 2; i < arr.length; i += 2) {
 }
 return newArr
   }
+
+//Вдвое старше
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  let year=sonYearsOld*2
+  let rezult=dadYearsOld-year
+  return Math.abs(rezult)
+}
+
+//
+Convert a string to an array
+function stringToArray(string){
+  return string.split(' ');
+}
+
+//Новичок - сокращай, но увеличивай
+function grow(x){
+  let rezult=1;
+  for(let a=0;a<x.length;a++){
+    rezult*=x[a]
+  }
+  console.log(rezult)
+return rezult;
+}
+
+//Вы сделаете это?
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  return distanceToPump/mpg<=fuelLeft ? true : false;
+};
+
+//Годы кошки, годы собаки
+var humanYearsCatYearsDogYears = function(humanYears) {
+  let cat=0
+  let dog=0
+ if(humanYears==1){
+   cat+=15
+   dog+=15
+ }else if(humanYears==2){
+   cat+=24
+   dog+=24
+ }else {
+    cat+=24+4*(humanYears-2)
+    dog+=24+5*(humanYears-2)
+ }
+  return [humanYears,cat,dog];
+}
+
+//Двойной Чар
+function doubleChar(str) {
+  return [...str].map(s=>s.repeat(2)).join('');
+}
+
+//Исправьте ошибки программы распознавания символов
+function correct(string){
+  return(string.replace(/0/g,'O').replace(/1/g,'I').replace(/5/g,'S'))
+  
+}
