@@ -12,3 +12,11 @@ function solution(str, ending){
     return str.endsWith(ending);
 }
 
+//
+function stray(numbers) {
+    return numbers.find(ele => numbers.indexOf(ele) === numbers.lastIndexOf(ele));
+}
+        
+  
+
+

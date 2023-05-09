@@ -494,3 +494,22 @@ function correct(string){
   return(string.replace(/0/g,'O').replace(/1/g,'I').replace(/5/g,'S'))
   
 }
+
+//Тип суммы
+function typeOfSum(a, b) {
+  return typeof(a+b)
+}
+
+//Calculate BMI
+function bmi(weight, height) {
+  let a =weight/(height*height)
+ if(a<=18.5){
+   return "Underweight"
+ }else if (a<=25){
+   return "Normal"
+ }else if (a<=30){
+   return "Overweight"
+ }else {
+   return "Obese"
+ }
+}
