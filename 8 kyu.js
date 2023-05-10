@@ -513,3 +513,51 @@ function bmi(weight, height) {
    return "Obese"
  }
 }
+
+//
+function enough(cap, on, wait){
+  return (on+wait)<=cap?0:Math.abs(cap-on-wait)
+
+  // your code here
+}
+//Sum The Strings
+function sumStr(a,b) {
+  let rezult = Number(a)+Number(b)
+  console.log(rezult)
+  return String(rezult)
+}
+
+//Sentence Smash
+function smash (words) {
+   return words.join(' ')
+};
+
+//Разобрать хороший int из проблемы char
+function getAge(inputString){
+  console.log(inputString)
+  return Number(inputString[0])
+
+}
+
+//I love you, a little , a lot, passionately ... not at all
+function howMuchILoveYou(nbPetals) {
+    if(nbPetals%6==1 ){
+      return "I love you"
+    }else if(nbPetals%6==2){
+      return "a little"
+    }else if(nbPetals%6==3){
+      return "a lot"
+}else if(nbPetals%6==4){
+      return "passionately"
+  }else if(nbPetals%6==5){
+      return "madly"
+  }else {
+    return "not at all"
+  }
+  }
+
+
+//Это даже?
+function testEven(n) {
+  return n%2==0?true:false;
+  }
