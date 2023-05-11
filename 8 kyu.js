@@ -561,3 +561,51 @@ function howMuchILoveYou(nbPetals) {
 function testEven(n) {
   return n%2==0?true:false;
   }
+
+  //Ближайший лифт
+  function elevator(left, right, call){
+let leftDistance = Math.abs(call - left);
+  let rightDistance = Math.abs(call - right);
+  if (left == right) return "right";
+  return leftDistance < rightDistance ? "left":"right";
+}
+
+
+//Grasshopper - Debug sayHello
+function sayHello(name) {
+  return  `Hello, ${name}`
+}
+
+//Рассчитать среднее
+function findAverage(array) {
+  if (array==0){
+    return 0
+  }
+  let rezult=0
+  let a=array.map(function(top){
+   rezult+=top 
+  })
+  return rezult/array.length
+}
+
+//Convert a String to a Number!
+const stringToNumber = function(str){
+  // put your code here
+  return Number(str);
+}
+
+//Серия для начинающих #4 Таракан
+function cockroachSpeed(s) {
+  return Math.floor((s/3.6)*100)
+}
+
+//
+What is between?
+ function between(a, b) {
+  let arr = [];
+  for (let i = a; i <= b; i++) {
+    arr.push(i);
+  }
+  return arr;
+}
+  
