@@ -608,4 +608,34 @@ What is between?
   }
   return arr;
 }
-  
+
+
+//Сумма без наибольшего и наименьшего числа
+function sumArray(array) {
+  if (array==null){
+    return 0
+  }
+  let sort=array.sort(function(a,b){
+    return a-b
+  })
+  let a=0;
+  for(let y=1;y<sort.length-1;y++){
+   a+= sort[y]
+  }
+return a
+}
+
+//Is it a palindrome?
+function isPalindrome(x) {
+ // var re = /[\W_]/g;
+  var lowRegStr = x.toLowerCase();
+  var reverseStr = lowRegStr.split('').reverse().join(''); 
+  return reverseStr === lowRegStr;
+}
+
+
+//Grasshopper - функция перемещения в терминальной игре
+function move (position, roll) {
+  return position+roll*2
+  // return the new position
+}
