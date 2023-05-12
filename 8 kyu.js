@@ -639,3 +639,47 @@ function move (position, roll) {
   return position+roll*2
   // return the new position
 }
+
+//Помогите элитному отряду бразильских войск BOPE
+function magNumber(info){
+  let gan=info[0]
+  let street=info[info.length-1] 
+  if(gan=="PT92"){
+     return Math.ceil(Math.abs(((street*3)/17)))
+  }else if(gan=="M4A1"|| gan=="M16A2"){
+    return Math.ceil(Math.abs(((street*3)/30)))
+    }else if(gan=="PSG1"){
+     return Math.ceil(Math.abs(((street*3)/5)))
+    }
+}
+
+//Добро пожаловать!
+function greet(language) {
+  let lan={
+english: 'Welcome',
+czech: 'Vitejte',
+danish: 'Velkomst',
+dutch: 'Welkom',
+estonian: 'Tere tulemast',
+finnish: 'Tervetuloa',
+flemish: 'Welgekomen',
+french: 'Bienvenue',
+german: 'Willkommen',
+irish: 'Failte',
+italian: 'Benvenuto',
+latvian: 'Gaidits',
+lithuanian: 'Laukiamas',
+polish: 'Witamy',
+spanish: 'Bienvenido',
+swedish: 'Valkommen',
+welsh: 'Croeso'
+}
+  
+  if(lan[language]){
+    return lan[language]
+  }else{
+    return 'Welcome'
+  }
+  
+  
+}
