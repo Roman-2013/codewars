@@ -680,6 +680,92 @@ welsh: 'Croeso'
   }else{
     return 'Welcome'
   }
-  
-  
+}
+
+//Вернуть день
+function whatday(num) {
+ 
+  return  num==1 ? "Sunday":
+  num==2 ? "Monday":
+  num==3 ? "Tuesday":
+  num==4 ? "Wednesday":
+  num==5 ? "Thursday":
+  num==6 ? "Friday":
+  num==7 ? "Saturday":"Wrong, please enter a number between 1 and 7";
+}
+
+//Включите его!
+function switchItUp(number){
+switch(number){
+    case 0:
+    return "Zero";
+    break;
+    case 1:
+    return "One";
+    break;
+  case 2:
+    return "Two";
+    break;
+  case 3:
+    return "Three";
+    break;
+  case 4:
+    return "Four";
+    break;
+  case 5:
+    return "Five";
+    break;
+  case 6:
+    return "Six";
+    break;
+  case 7:
+    return "Seven";
+    break;
+  case 8:
+    return "Eight";
+    break;
+    case 9:
+    return "Nine";
+    break;
+}
+}
+
+//Make a function that does arithmetic!
+function arithmetic(a, b, operator){
+  switch (operator){
+      case "add":
+      return a+b;
+      break;
+      case "subtract":
+      return a-b;
+      break;
+      case "multiply":
+      return a*b;
+      break;
+      case "divide":
+      return a/b;
+      break;
+  }
+}
+//Удаление гласных
+function shortcut (string) {
+  let a=/[aeiuo]/gi
+  return string.replace(a,'');
+}
+
+//
+Grasshopper - Check for factor
+function checkForFactor (base, factor) {
+  if(base%factor==0){
+    return true
+  }else {
+    return false
+  }
+}
+
+
+//Are You Playing Banjo?
+function areYouPlayingBanjo(name) {
+return name[0]=='r'|| name[0]=='R'?`${name} plays banjo`:`${name} does not play banjo`
+
 }

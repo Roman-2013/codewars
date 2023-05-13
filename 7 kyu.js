@@ -38,4 +38,32 @@ function removeUrlAnchor(url){
   return url.substring(0, index);
 }
 
+//Количество человек в автобусе
+var number = function(busStops){
+  let rezult=0;
+  for(let a=0;a<busStops.length;a++){
+    rezult+=busStops[a][0]
+    rezult-=busStops[a][1]
+      console.log(busStops[a][1])
+  }return rezult
+  // Good Luck!
+}
+
+//Найдите следующий идеальный квадрат!
+function findNextSquare(sq) {
+  let rezult =Math.sqrt(sq)
+  if(Math.sqrt(sq)!==Math.floor(Math.sqrt(sq))){
+     return -1
+     }else {
+       return (Math.sqrt(sq)+1)*(Math.sqrt(sq)+1)
+     }
+}
+
+
+
+
+
+
+
+
 
