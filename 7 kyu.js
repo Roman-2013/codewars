@@ -59,6 +59,39 @@ function findNextSquare(sq) {
      }
 }
 
+//Highest and Lowest
+function highAndLow(numbers){
+  let create=numbers.split(' ').sort(function(a,b){
+    return a-b;
+  })
+  console.log(create)
+  return create[create.length-1]+' '+create[0]
+}
+
+
+//Sort array by string length
+function sortByLength (array) {
+  return array.sort(function(a,b){
+    return a.length-b.length
+  })
+};
+
+//Complementary DNA
+function DNAStrand(dna){
+  var complement = {'A': 'T', 'C': 'G', 'G': 'C', 'T': 'A'};
+  var result = '';
+  for (var i = 0; i < dna.length; i++) {
+    result += complement[dna[i]];
+  }
+  return result;
+}
+
+//Бывшие и Оз
+function XO(str) {
+  const xCount = (str.match(/[xX]/g) || []).length;
+  const oCount = (str.match(/[oO]/g) || []).length;
+  return xCount === oCount;
+  }
 
 
 

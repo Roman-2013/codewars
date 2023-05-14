@@ -767,5 +767,61 @@ function checkForFactor (base, factor) {
 //Are You Playing Banjo?
 function areYouPlayingBanjo(name) {
 return name[0]=='r'|| name[0]=='R'?`${name} plays banjo`:`${name} does not play banjo`
-
 }
+
+//Подсчет нечетных чисел ниже n
+function oddCount(n){
+  return Math.floor(n/2)
+
+  //Volume of a Cuboid
+  class Kata {
+  static getVolumeOfCuboid= (length, width, height) => length * width *height
+    // your code here
+}
+
+//
+Найдите первое непоследовательное число
+function firstNonConsecutive (arr) {
+  if (arr.length < 2) {
+    return null;
+  }
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] !== arr[i-1] + 1) {
+      return arr[i];
+    }
+  }
+  return null;
+}
+
+//Кузнечик - Голы Месси
+var laLigaGoals=43
+var championsLeagueGoals=10
+var copaDelReyGoals=5
+
+var totalGoals=laLigaGoals+championsLeagueGoals+copaDelReyGoals
+
+//Кузнечик — Отладка
+function weatherInfo (temp) {
+  let c=(temp-32)*(5/9)
+
+  if (c < 0)
+    return (c + " is freezing temperature")
+  else
+    return (c + " is above freezing temperature")
+}
+  
+
+//DNA to RNA Conversion
+function DNAtoRNA(dna) {
+  let re=/T/gi;
+  return dna.replace(re,'U')
+}
+
+//Grasshopper - Messi goals function
+let goals = (laLigaGoals, copaDelReyGoals, championsLeagueGoals)=> 
+laLigaGoals+copaDelReyGoals+championsLeagueGoals
+  // code goes here
+
+
+
+  
