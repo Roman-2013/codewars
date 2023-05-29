@@ -822,6 +822,17 @@ let goals = (laLigaGoals, copaDelReyGoals, championsLeagueGoals)=>
 laLigaGoals+copaDelReyGoals+championsLeagueGoals
   // code goes here
 
+//Добавить длину
 
+function addLength(s) {
+  const words = s.split(' '); // Разделяем строку на слова
+  const result = [];
+  for (let i = 0; i < words.length; i++) {
+    const word = words[i];
+    const length = word.length.toString(); // Получаем длину слова и преобразуем в строку
+    result.push(word + ' ' + length); // Добавляем в массив слово с длиной
+  }
+  return result;
+}
 
   
